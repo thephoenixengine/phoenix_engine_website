@@ -83,6 +83,8 @@
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #ffbbbc;
+        background-color: #16A085;
+
     }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
@@ -96,9 +98,10 @@
 /* override Styles */
 
 /* override navbar collapse scrollbar settings */
-.navbar-default .navbar-collapse{
+.collapse.navbar-collapse{
     overflow: hidden;
     max-height: none !important;
+    height: auto !important;
 }
 /* make the margin 0px from the bottom */
 .navbar-default{
@@ -106,11 +109,11 @@
 }
 /* prevent overlapping the page contents */
 .navbar-fixed-top{
-    position: relative;
+
 }
 /* make the sidebar toggle button always visible and to the left */
 .navbar-toggle.navbar-left {
     float: left;
-    margin-left: 0x;
+    margin-left: 10px;
     display: block;
 }

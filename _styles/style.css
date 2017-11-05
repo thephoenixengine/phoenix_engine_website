@@ -1,19 +1,4 @@
 
-/*sidebar toggle button*/
-.sidebar-toggle{
-    background-color: #4CAF50;
-    border: none;
-    padding: 0px 15px;
-    display: inline-block;
-    cursor: pointer;
-}
-.bar1, .bar2, .bar3 {
-    width: 25px;
-    height: 2px;
-    background-color: #333;
-    margin: 3px 0;
-    transition: 0.4s;
-}
 /* Sidebar Wrapper style*/
 #sidebar-wrapper{
     z-index: 1;
@@ -22,17 +7,19 @@
     height: 100%;
     overflow-y: hidden;
     background: #2C3E50;
-    padding: 0px 0;
+    padding: 20px 0;
     opacity: 0.9;
 }
 /* Change the width of the sidebar to display it*/
 #wrapper.menuDisplayed #sidebar-wrapper{
     width: 250px;
+    position: fixed;
 }
 
 #wrapper.menuDisplayed #page-content-wrapper{
     padding-left: 250px;
 }
+
 
 /* Sidebar styling */
 .sidebar-nav{
