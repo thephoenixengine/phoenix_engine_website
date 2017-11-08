@@ -1,0 +1,39 @@
+/*===================================================================================
+=============================== NAVBAR CSS STYLES ===================================
+====================================================================================*/
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffbbbc;
+    background-color: #16A085;
+
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffbbbc;
+    background-color: #c0392b;
+}
+
+.navbar-toggle.navbar-left {
+    margin-left: 15px;
+}
+
+/* override navbar collapse scrollbar settings */
+.collapse.navbar-collapse{
+    overflow: hidden;
+    max-height: none !important;
+    height: auto !important;
+}
+
+
+/*===================================================================================
+=============================== SIDEBAR CSS STYLES ==================================
+====================================================================================*/
+
+#sidebar-wrapper{
+    margin-top: 50px;
+}

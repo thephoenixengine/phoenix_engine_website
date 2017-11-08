@@ -1,0 +1,56 @@
+/*===================================================================================
+=============================== MAIN CSS STYLES =====================================
+====================================================================================*/
+
+/*========== Page Content ============*/
+#wrapper.menuDisplayed #page-content-wrapper{
+    padding-left: 250px;
+    width: 100%;
+    position: absolute;
+    overflow-x: hidden;
+}
+#page-content-wrapper{
+    width: 100%;
+    position:absolute;
+    padding-left: 0;
+    padding-top: 51px;
+    overflow-x: hidden;
+}
+
+/* ========= Title Line ======== */
+.title-lines h1 {
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+}
+.title-lines h1:before,
+.title-lines h1:after {
+    background: #e4e4e4;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 1000%;
+}
+.title-lines h1:before {
+    right: 100%;
+}
+.title-lines h1:after {
+    left: 100%;
+}
+.title-lines {
+    overflow: hidden;
+    text-align: center;
+}
+
+/* ========== Carousel container styling ===========*/
+.container-fluid.container-fullwidth{
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+/* ========== Image containers styling ===========*/
+.img-thumbnail{
+    border-color: #00CC99;
+}
