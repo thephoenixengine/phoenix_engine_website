@@ -3,19 +3,19 @@
 <head>
     <title>Phoenix-Home</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Local CSS Files -->
+    <link id="size-stylesheet" rel="stylesheet" type="text/css" href="_styles/narrow.css" />
     <link rel="stylesheet" href="_styles/main.css">
     <link rel="stylesheet" href="_styles/navbar.css">
     <link rel="stylesheet" href="_styles/sidebar.css">
-    <link id="size-stylesheet" rel="stylesheet" type="text/css" href="_styles/narrow.css" />
 </head>
-<body style="background-color: #E6E6E6">
+<body style="background-color: #ffffff">
 
     <!-- TOP NAVIGATION BAR -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -42,20 +42,23 @@
                 <ul class="nav navbar-nav">
                     <!-- drop down menu -->
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">EXPLORE<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">EXPLORE <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">OVERVIEW</a> </li>
                             <li><a href="#">FEATURES</a> </li>
                             <li><a href="#">SHOWCASE</a> </li>
                             <li><a href="#">VERSIONS</a> </li>
+                            <li class="dropdown-header">Additional Items</li>
+                            <li role="separator" class="divider"></li>
                             <li><a href="#">FAQ</a> </li>
 
 
                         </ul>
                     </li>
+                    <li class="nav-divider"></li>
                     <!-- drop down menu -->
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">MARCKETPLACE<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">MARCKETPLACE <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">BROWS</a> </li>
                             <li><a href="#">SUBMIT CONTENT</a> </li>
@@ -64,6 +67,7 @@
 
                         </ul>
                     </li>
+                    <li class="nav-divider"></li>
                     <!-- drop down menu -->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">LEARN <span class="caret"></span></a>
@@ -72,20 +76,29 @@
                             <li><a href="#">TUTORIALS</a> </li>
                         </ul>
                     </li>
+                    <li class="nav-divider"></li>
                     <li><a href="#">ABOUT</a> </li>
-
-
-
-
                 </ul>
 
                 <!-- Right side menu items -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span></a> </li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a> </li>
+                    <!--<li class="search-icon">
+                        <form id="search-on">
+                            <input type="search" placeholder="Search">
+                        </form>
+                    </li>-->
+                    <li class="user-login"><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li>
                 </ul>
 
             </div>
+            <div class="navbar-form navbar-search navbar-right">
+                <form id="search-on">
+                    <input type="search" placeholder="Search">
+                </form>
+            </div>
+
+
         </div>
     </nav>
 
@@ -96,11 +109,11 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Account</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-play-circle" style="padding-right: 20px; margin-left: -20px;"></span> TUTORIALS</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-equalizer" style="padding-right: 20px; margin-left: -20px;"></span> ASSETS</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user" style="padding-right: 20px; margin-left: -20px;"></span> PORTFOLIO</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-flash" style="padding-right: 20px; margin-left: -20px;"></span> SHADERS</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-picture" style="padding-right: 20px; margin-left: -20px;"></span> TEXTURES</a></li>
             </ul>
         </div>
 
@@ -161,6 +174,22 @@
                         </div>
 
                     </div>
+                </div>
+
+                <div class="row row-intro">
+
+                    <div class="col-lg-12 container-fluid">
+                        <div class="jumbotron">
+                            <h1>Introducing Phoenix Engine</h1>
+                            <p>Phoenix engine is a premier open-source game engine
+                                for creating 2D and 3D games for PC, Mobiles and Consoles – with full source code.</p>
+                            <button type="button" class="btn btn-primary">Engine Features</button>
+                            <button type="button" class="btn btn-success">Download Source</button>
+                            <button type="button" class="btn btn-info">Get Involved</button>
+
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="row" style="margin-top: 10px">
@@ -259,7 +288,7 @@
     <script>
     function adjustStyle(width) {
     width = parseInt(width);
-    if (width < 701) {
+    if (width < 768) {
     $("#size-stylesheet").attr("href", "_styles/narrow.css");
     } else if (width < 900) {
     $("#size-stylesheet").attr("href", "_styles/medium.css");
@@ -275,11 +304,26 @@
     });
     });
     </script>
-    <!-- Sidebar toggle script -->
+    <!--
     <script>
         $("#menu-toggle").click( function(e){
             e.preventDefault();
             $("#wrapper").toggleClass("menuDisplayed");
+        });
+    </script>
+    -->
+    <!-- Sidebar toggle script -->
+    <script>
+        $(function () {
+            $('#menu-toggle').on('click', function (e) {
+                $('#wrapper').toggleClass('menuDisplayed');
+                e.stopPropagation();
+                return false;
+            });
+            $('*:not(#menu-toggle)').on('click', function () {
+                $('#wrapper').removeClass('menuDisplayed');
+            });
+
         });
     </script>
 </body>

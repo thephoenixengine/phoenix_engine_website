@@ -1,7 +1,14 @@
 /*===================================================================================
 =============================== NAVBAR CSS STYLES ===================================
 ====================================================================================*/
-
+.navbar-default{
+    border:none;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffbbbc;
+    background-color: #00CC99;
+}
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #ecf0f1;
 }
@@ -30,10 +37,37 @@
 }
 
 
+
+.nav .nav-divider {
+    height: 1px;
+    margin: 0 10px;
+    background-color: #2f2f2f;
+}
+
+.navbar-search {
+    padding:2px 0px 0px 0px;
+    margin-right: -30px;
+
+}
+
 /*===================================================================================
 =============================== SIDEBAR CSS STYLES ==================================
 ====================================================================================*/
 
-#sidebar-wrapper{
+#wrapper.menuDisplayed #sidebar-wrapper{
+    width: 100%;
+    position: fixed;
+
+}
+
+/*===================================================================================
+=============================== WRAPPER CSS STYLES ===================================
+====================================================================================*/
+
+#wrapper{
     margin-top: 50px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper{
+    padding-left: 0px;
 }

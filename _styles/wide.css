@@ -11,7 +11,7 @@
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
-    margin-left: 70px;
+    margin-left: 81px;
 }
 .nav li a {
     padding-top: 25px;
@@ -20,14 +20,11 @@
 
 }
 .navbar-default .navbar-nav > li > .dropdown-menu {
-    background-color: #b1b1b4;
     font-size: 12px;
     width: 250px;
-    margin-left: 11px;
 }
 .navbar-default .navbar-nav > li > a {
     color: #ecf0f1;
-    margin-left: 12px;
 }
 .dropdown li a{
     padding-top: 10px;
@@ -36,12 +33,33 @@
     letter-spacing: 3px;
     margin-left: 0px;
 }
-
 .navbar-right{
-    margin:0;
+    margin-left:0px;
+    margin-right: -20px;
     padding:0;
 }
+.user-login{
+    margin-right: -15px;
+}
 
+.navbar-search {
+    padding-top: 10px;
+}
 /*===================================================================================
 =============================== SIDEBAR CSS STYLES ==================================
 ====================================================================================*/
+#wrapper.menuDisplayed #sidebar-wrapper{
+    width: 250px;
+}
+
+/*===================================================================================
+=============================== WRAPPER CSS STYLES ==================================
+====================================================================================*/
+#wrapper{
+    margin-top:70px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper{
+    padding-left: 0px;
+
+}
