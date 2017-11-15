@@ -4,6 +4,14 @@
 .navbar-default{
     border:none;
 }
+
+.navbar-header {
+    text-align: center;
+}
+.navbar > .container-fluid .navbar-header .navbar-brand {
+    display: block;
+    float: none;
+}
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     color: #ffbbbc;
@@ -46,7 +54,8 @@
 
 .navbar-search {
     padding:2px 0px 0px 0px;
-    margin-right: -30px;
+    margin-right: -10px;
+    display:block;
 
 }
 
@@ -57,7 +66,6 @@
 #wrapper.menuDisplayed #sidebar-wrapper{
     width: 100%;
     position: fixed;
-
 }
 
 /*===================================================================================
