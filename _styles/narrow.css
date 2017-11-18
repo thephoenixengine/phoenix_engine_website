@@ -44,21 +44,23 @@
     height: auto !important;
 }
 
-
-
 .nav .nav-divider {
     height: 1px;
     margin: 0 10px;
     background-color: #2f2f2f;
 }
 
+.navbar-form{
+    margin-left: 150px;
+}
 .navbar-search {
     padding:2px 0px 0px 0px;
     margin-right: -10px;
     display:block;
-
 }
-
+.btn-block{
+    margin-bottom: 10px;
+}
 /*===================================================================================
 =============================== SIDEBAR CSS STYLES ==================================
 ====================================================================================*/

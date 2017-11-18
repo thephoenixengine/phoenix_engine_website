@@ -159,7 +159,11 @@ input::-webkit-input-placeholder {
 #search-on input::-webkit-input-placeholder {
     color: transparent;
 }
-
+/** ===========Search Bar ============== **/
+.navbar-search{
+    margin-right: -60px;
+    margon-left: -150px;
+}
 /** ============ Login Panel ============= **/
 .login-panel {
     min-width: 250px;

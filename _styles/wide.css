@@ -69,13 +69,15 @@ li.dropdown:hover > .dropdown-menu{
     margin-right: -20px;
     padding:0;
 }
+.signin-btn{
+    margin-right: 15px;
+    margin-top: 20px;
+}
 .user-login{
     margin-right: -15px;
 }
-
 .navbar-search {
     padding-top: 10px;
-
 }
 /*===================================================================================
 =============================== SIDEBAR CSS STYLES ==================================
