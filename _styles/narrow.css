@@ -58,8 +58,25 @@
     margin-right: -10px;
     display:block;
 }
-.btn-block{
+.btn-grid{
     margin-bottom: 10px;
+    width: 100%;
+}
+.signin-btn{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.dropdown-grid .col-xs-4{
+    width: 100%;
+    float: none;
+}
+.dropdown-grid .col-xs-6{
+    width: 100%;
+    float: none;
+}
+.dropdown-header{
+    margin-bottom: 20px;
+    align-self: center;
 }
 /*===================================================================================
 =============================== SIDEBAR CSS STYLES ==================================

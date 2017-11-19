@@ -54,6 +54,34 @@ li.dropdown:hover > .dropdown-menu{
     margin-left: 60px;
 }
 
+/** =========== Button Grid ============== **/
+.btn-grid{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.dropdown-grid > li > a {
+    -webkit-align-items: center;
+    border-radius: 2px;
+}
+.dropdown-grid .col-xs-4{
+    margin-bottom: 20px;
+}
+.navbar-default .navbar-right > li > .dropdown-grid{
+    left: -185px;
+    margin-top: 20px;
+}
+.navbar-default .navbar-nav > li > .dropdown-grid:after{
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #161616;
+    margin-left: 60px;
+}
 .navbar-default .navbar-nav > li > a {
     color: #ecf0f1;
 }
@@ -72,9 +100,7 @@ li.dropdown:hover > .dropdown-menu{
 .signin-btn{
     margin-right: 15px;
     margin-top: 20px;
-}
-.user-login{
-    margin-right: -15px;
+    border-radius: 2px;
 }
 .navbar-search {
     padding-top: 10px;
@@ -95,5 +121,4 @@ li.dropdown:hover > .dropdown-menu{
 
 #wrapper.menuDisplayed #page-content-wrapper{
     padding-left: 0px;
-
 }

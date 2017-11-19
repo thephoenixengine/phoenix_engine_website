@@ -14,32 +14,66 @@
 
 li.dropdown:hover > .dropdown-menu{
     display: block;
-    position: absolute;
     top: 50px;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu:after {
     position: absolute;
     left: 50%;
-    top: -20px;
+    top: -10px;
     width: 0;
     height: 0;
     content: '';
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #161616;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #161616;
     margin-left: -60px;
 }
 .navbar-default .navbar-nav > li > .login-panel:after {
     position: absolute;
-    left: 50%;
-    top: -20px;
+    left: 55%;
+    top: -10px;
     width: 0;
     height: 0;
     content: '';
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #161616;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #161616;
     margin-left: 60px;
+}
+
+/** =========== Button Grid ============== **/
+.btn-grid{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.dropdown-grid > li > a {
+    -webkit-align-items: center;
+    border-radius: 2px;
+}
+.dropdown-grid .col-xs-4{
+    margin-bottom: 20px;
+}
+.navbar-default .navbar-right .dropdown-grid .col-xs-4 {
+    margin-right: -10px;
+}
+.navbar-default .navbar-right .dropdown-grid .col-xs-4 > a{
+    margin-right: -20px;
+}
+.navbar-default .navbar-right > li > .dropdown-grid{
+    left: -185px;
+    margin-top: 100px;
+}
+.navbar-default .navbar-nav > li > .dropdown-grid:after{
+    position: absolute;
+    left: 55%;
+    top: -10px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #161616;
+    margin-left: 65px;
 }
 
 .navbar-search {
@@ -49,6 +83,7 @@ li.dropdown:hover > .dropdown-menu{
 .signin-btn{
     margin-right: 15px;
     margin-top: 10px;
+    border-radius: 2px;
 }
 /*===================================================================================
 =============================== SIDEBAR CSS STYLES ==================================
