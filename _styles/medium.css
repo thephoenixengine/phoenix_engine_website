@@ -12,8 +12,11 @@
     padding:0;
 }
 
-li.dropdown:hover > .dropdown-menu{
+.navbar-left li.dropdown:hover > .dropdown-menu{
     display: block;
+    top: 50px;
+}
+.navbar-default .navbar-right .dropdown-menu{
     top: 50px;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu:after {
@@ -39,6 +42,24 @@ li.dropdown:hover > .dropdown-menu{
     border-right: 10px solid transparent;
     border-bottom: 10px solid #161616;
     margin-left: 60px;
+}
+/** =========== Button Search ============== **/
+.btn-search{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-search:after {
+    position: absolute;
+    left: 55%;
+    top: -10px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #161616;
+    margin-left: 35px;
 }
 
 /** =========== Button Grid ============== **/
@@ -76,10 +97,6 @@ li.dropdown:hover > .dropdown-menu{
     margin-left: 65px;
 }
 
-.navbar-search {
-    padding-top: 2px;
-    margin-right: -40px;
-}
 .signin-btn{
     margin-right: 15px;
     margin-top: 10px;
@@ -101,4 +118,9 @@ li.dropdown:hover > .dropdown-menu{
 
 #wrapper.menuDisplayed #page-content-wrapper{
     padding-left: 0px;
+}
+
+.or{
+    margn-top: 10px;
+    margin-left: 350px;
 }

@@ -8,7 +8,25 @@
 .color-google{color:#dd4b39;}
 .color-youtube{color:#ff0000;}
 .color-instagram{color:#e95950;}
+.color-gray{color: #636363;}
+.color-white{
+    color: #ffffff;
+}
 
+/* Buttons*/
+.btn-fblogin{
+    background-color: #3b5998;
+}
+.btn-googlelogin{
+    background-color: #dd4b39;
+}
+.btn-twitterlogin{
+    background-color: #55acee;
+}
+
+.btn-block{
+    border-radius: 2px;
+}
 /*===================================================================================
 =============================== MAIN CSS STYLES =====================================
 ====================================================================================*/

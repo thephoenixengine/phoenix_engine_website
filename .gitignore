@@ -1,2 +1,5 @@
 PhoenixWeb.iml
 /.idea
+/sandbox
+/node_modules
+/typings

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <link rel="stylesheet" href="sandbox/bootstrap.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,20 +41,18 @@
             <div class="collapse navbar-collapse" id="mainNavBar">
 
                 <!-- Left side menu items -->
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-left">
                     <!-- drop down menu -->
                     <li class="dropdown">
-                        <a href="http://www.google.com" class="dropdown-toggle" data-toggle="dropdown">Explore <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Explore <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="http://www.google.com">Overview</a> </li>
+                            <li><a href="sandbox/basic.php">Overview</a> </li>
                             <li><a href="#">Features</a> </li>
                             <li><a href="#">Showcase</a> </li>
                             <li><a href="#">Versions</a> </li>
                             <li class="dropdown-header">Additional Items</li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">FAQ</a> </li>
-
-
                         </ul>
                     </li>
                     <li class="nav-divider"></li>
@@ -84,25 +82,52 @@
 
                 <!-- Right side menu items -->
                 <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+                        <button type="button" class="btn btn-primary btn-sm btn-search  dropdown-toggle"  data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-search">
+                            <li class="dropdown-header">Search Phoenix</li>
+                            <li class="col-xs-12" style="margin-bottom: 10px">
+                                <form role="search" id="search-on">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search" name="q">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+
+                    </li>
+
                     <li class="dropdown">
                         <button type="button" class="btn btn-primary btn-sm btn-grid  dropdown-toggle"  data-toggle="dropdown">
                             <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
                         </button>
                             <ul class="dropdown-menu dropdown-grid">
-                                <li class="dropdown-header color-blue">User</li>
-                                <li class="col-xs-6 text-center" ><a href="#"><div><i class="fa fa-user-circle fa-2x fa-fw color-twitter"></i><h6>Profile</h6></div></a></li>
-                                <li class="col-xs-6 text-center" ><a href="#"><div><i class="fa fa-briefcase fa-2x fa-fw color-twitter"></i><h6>Portfolio</h6></div></a></li>
 
-                                <li role="separator" class="divider col-xs-12"></li>
-                                <li class="dropdown-header col-xs-12 color-blue">Follow Phoenix on</li>
-                                <li class="col-xs-4 text-center" ><a href="#"><i class="fa fa-media fa-twitter fa-2x fa-fw color-twitter"></i></a></li>
-                                <li class="col-xs-4 text-center" ><a href="#"><i class="fa fa-media fa-facebook fa-2x fa-fw color-facebook"></i></a></li>
-                                <li class="col-xs-4 text-center" ><a href="#"><i class="fa fa-media fa-linkedin fa-2x fa-fw color-linkedin"></i></a></li>
-                                <li class="col-xs-4 text-center" ><a href="#"><i class="fa fa-media fa-google-plus fa-2x fa-fw color-google"></i></a></li>
-                                <li class="col-xs-4 text-center" ><a href="#"><i class="fa fa-media fa-youtube fa-2x fa-fw color-youtube"></i></a></li>
-                                <li class="col-xs-4 text-center" ><a href="#"><i class="fa fa-media fa-instagram fa-2x fa-fw color-instagram"></i></a></li>
-                                <li class="col-xs-4 text-center" ><a href="#"><i class="fa fa-media fa-github fa-2x fa-fw color-twitter"></i></a></li>
-                                <li class="col-xs-4 text-center" ><a href="#"><i class="fa fa-media fa-pinterest fa-2x fa-fw color-twitter"></i></a></li>
+                                    <li class="col-xs-12 dropdown-header color-blue">User</li>
+
+                                    <li class="col-xs-6 text-center"><a href="#"><i class="fa fa-user-circle fa-3x fa-fw color-twitter"></i><h6><p style="letter-spacing: 0px;">Profile</p></h6></a></li>
+                                    <li class="col-xs-6 text-center"><a href="#"><i class="fa fa-briefcase fa-3x fa-fw color-twitter"></i><h6><p style="letter-spacing: 0px;">Portfolio</p></h6></a></li>
+
+                                    <li class="col-xs-12 divider" role="separator"></li>
+                                    <li class="col-xs-12 dropdown-header color-blue">Follow Phoenix On</li>
+
+                                    <li class="col-xs-4 text-center"><a href="#"><i class="fa fa-media fa-twitter fa-2x fa-fw color-twitter"></i></a><p class="color-gray">Twitter</p></li>
+                                    <li class="col-xs-4 text-center"><a href="#"><i class="fa fa-media fa-facebook fa-2x fa-fw color-facebook"></i></a><p class="color-gray">Facebook</p></li>
+                                    <li class="col-xs-4 text-center"><a href="#"><i class="fa fa-media fa-linkedin fa-2x fa-fw color-linkedin"></i></a><p class="color-gray">Linkedin</p></li>
+
+                                    <li class="col-xs-4 text-center"><a href="#"><i class="fa fa-media fa-google-plus fa-2x fa-fw color-google"></i></a><p class="color-gray">Google+</p></li>
+                                    <li class="col-xs-4 text-center"><a href="#"><i class="fa fa-media fa-youtube fa-2x fa-fw color-youtube"></i></a><p class="color-gray">Youtube</p></li>
+                                    <li class="col-xs-4 text-center"><a href="#"><i class="fa fa-media fa-instagram fa-2x fa-fw color-instagram"></i></a><p class="color-gray">Instagram</p></li>
+
+                                    <li class="col-xs-4 text-center"><a href="#"><i class="fa fa-media fa-github fa-2x fa-fw color-twitter"></i></a><p class="color-gray">Github</p></li>
+                                    <li class="col-xs-4 text-center"><a href="#"><i class="fa fa-media fa-pinterest fa-2x fa-fw color-twitter"></i></a><p class="color-gray">Pinterest</p></li>
                             </ul>
                     </li>
 
@@ -111,8 +136,8 @@
                         <ul class="dropdown-menu login-panel">
                             <li>
                                 <div class="dropdown-header">
-                                    <span class="login-header color-blue">Sign In</span>
-                                    <span class="signup-header color-blue" ><a href="#">Sign Up</a></span>
+                                    <span class="login-header color-blue">Login</span>
+                                    <span class="signup-header color-blue" ><a href="signup.html">Sign Up</a></span>
                                     <span class="forgot-password color-blue"><a href="">Forgot password?</a></span>
                                 </div>
                                 <div class="clearfix"></div>
@@ -138,7 +163,12 @@
                                             <!-- Button -->
                                             <div class="col-sm-12 controls center-text">
                                                 <a id="btn-login" href="#" class="btn btn-block btn-success">Login</a>
-                                                <!--<a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>-->
+
+                                                <h5 style="text-align: center; color: #00CC99;">or</h5>
+                                                <a href="#" class="btn btn-block color-white btn-fblogin">Login with Facebook</a>
+                                                <a href="#" class="btn btn-block color-white btn-googlelogin">Login with Google</a>
+                                                <a href="#" class="btn btn-block color-white btn-twitterlogin" >Login with Twitter</a>
+
                                             </div>
                                         </div>
                                     </form>
@@ -174,8 +204,8 @@
         </div>
     </nav>
 
-    <!-- Contents of the website -->
 
+    <!-- Contents of the website -->
     <div id="wrapper">
 
         <!-- Sidebar -->
@@ -262,6 +292,7 @@
                             <button type="button" class="btn btn-outline-primary">Engine Features</button>
                             <button type="button" class="btn btn-success">Download Source</button>
                             <button type="button" class="btn btn-info">Get Involved</button>
+                            <my-app>Loading...</my-app>
 
                         </div>
                     </div>
@@ -360,6 +391,29 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- Load libraries (Note: IE required polyfills, in this exact order_ -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <!-- Configure SystemJS -->
+    <script>
+        System.config({
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/js/main').then(null, console.error.bind(console));
+    </script>
+
     <!-- Media query handler for different css layouts -->
     <script>
     function adjustStyle(width) {
@@ -399,15 +453,6 @@
             $('*:not(#menu-toggle)').on('click', function () {
                 $('#wrapper').removeClass('menuDisplayed');
             });
-        });
-    </script>
-
-    <script>
-        $('main-container').click(function (e) {
-            var _opened = $(".navbar-colapse").hasClass("navbar-collapse") && $(".navbar-collapse").hasClass("in");
-            if(_opened === true && !($(e.target).hasClass("navbar-toggle")) ){
-                $("button.navbar-toggle").click();
-            }
         });
     </script>
 </body>
